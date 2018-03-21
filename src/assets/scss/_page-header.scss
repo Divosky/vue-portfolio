@@ -1,0 +1,90 @@
+.site-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: $header-width;
+  background: $header-bg;
+  @media (min-width: $bp-sm) {
+    justify-content: space-between;
+    width: $header-width--sm-up;
+    height: $header-height--sm-up;
+    clip-path: $header-clip-path;
+  }
+}
+
+.whoiam {
+  white-space: nowrap;
+  &-name {
+    font-size: $header-whoiam-name-font-size;
+    color: $header-whoiam-name-color;
+    text-align: center;
+  }
+  &-desc {
+    font-size: $header-whoiam-desc-font-size;
+    letter-spacing: $header-whoiam-desc-letter-spacing;
+    color: $header-whoiam-desc-color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.nav-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: $navbar-font-size;
+  @media (min-width: $bp-sm) {
+    justify-content: center;
+    margin-left: $navbar-margin-left;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @media (min-width: $bp-sm) {
+      flex-direction: column;
+    }
+  }
+  a {
+    position: relative;
+    display: inline-block;
+    padding: $navbar-link-padding;
+    margin-top: $navbar-link-margin;
+    color: $navbar-link-color;
+    text-decoration: none;
+    &:before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      visibility: hidden;
+      width: 0;
+      height: 2px;
+      content: "";
+      background-color: $navbar-link-color;
+      transition: $navbar-transition;
+    }
+    &:hover {
+      cursor: pointer;
+      &:before {
+        visibility: visible;
+        width: 100%;
+      }
+    }
+  }
+  .active a {
+    &:before {
+      visibility: visible;
+      width: 100%;
+    }
+  }
+}
+
+.header-footer {
+  display: none;
+  @media (min-width: $bp-sm) {
+    display: block;
+    width: 60%;
+    margin-left: 15px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,10 @@
+::-webkit-scrollbar {
+	width: $scrollbar-width;
+}
+::-webkit-scrollbar-thumb {
+	background: $scrollbar-thumb-bg;
+	box-shadow: $scrollbar-thumb-box-shadow;
+}
+::-webkit-scrollbar-track {
+	background: $scrollbar-track-bg;
+}

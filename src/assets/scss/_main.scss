@@ -1,0 +1,101 @@
+@import 'page-header';
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  font-size: 16px;
+  overflow-y: auto;
+  @media (min-width: $bp-sm) {
+    overflow: hidden;
+  }
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $base-color;
+  background: $body-bg;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  @media (min-width: $bp-sm) {
+    flex-direction: row;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.site-content {
+  display: flex;
+  flex-basis: 70%;
+  justify-content: center;
+  width: calc(100% - 8px);
+  height: max-content;
+  @media (min-width: $bp-sm) {
+    max-height: 85vh;
+  }
+}
+
+.box {
+  flex: 1;
+  box-sizing: border-box;
+  padding: $box-padding;
+  margin: $box-margin;
+  word-wrap: break-word;
+  color: $box-color;
+  background: $box-bg;
+  box-shadow: $box-box-shadow;
+  &--lg {
+    margin: $box-margin--lg;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .box-content {
+      @media (min-width: $bp-sm) {
+        width: 70%;
+      }
+    }
+  }
+  &-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $box-title-font-size;
+    letter-spacing: $box-title-letter-spacing;
+    text-align: center;
+    span {
+      flex: 1;
+    }
+  }
+  &-content {
+    width: $box-content-width;
+    margin: $box-content-margin;
+    font-size: $box-content-font-size;
+    text-align: justify;
+  }
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list {
+  text-align: $list-text-align;
+  list-style: $list-style-type;
+  li {
+    margin: $list-element-margin;
+    @media (min-width: $bp-sm) {
+      margin-left: $spacer * 2;
+    }
+  }
+}

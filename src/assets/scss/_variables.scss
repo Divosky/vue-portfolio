@@ -1,0 +1,103 @@
+$spacer: 1rem;
+
+// Colors:
+$primary: #C77979;
+$white: #fff;
+$black: #000;
+
+// Base
+$base-color: rgba($white, .87);
+$base-line-height: 1.6;
+$base-font-size: 1rem;
+$base-font-family: "Raleway", "Arial", "Halvetica", sans-serif;
+
+// Body
+$body-bg: #1a1a1a url('../static/img/bg-main.jpeg');
+
+// Header
+$header-bg: #000;
+$header-link-color: $base-color;
+$header-clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
+$header-width: 100%;
+$header-width--sm-up: 30%;
+$header-height--sm-up: 100vh;
+$header-whoiam-name-font-size: $base-font-size * 2;
+$header-whoiam-name-color: $base-color;
+$header-whoiam-desc-font-size: calc(#{$base-font-size} * .45 + 1vmin);
+$header-whoiam-desc-letter-spacing: 2px;
+$header-whoiam-desc-color: darken($base-color, 10%);
+$header-whoiam-desc-text-shadow: 0 0 1px $black;
+
+// Main Navbar
+$navbar-font-size: calc(#{$base-font-size} * .75 + 1vmin);
+$navbar-link-color: $header-link-color;
+$navbar-link-padding: $spacer * .6;
+$navbar-link-margin: $spacer * .5;
+$navbar-margin-left: $spacer;
+$navbar-transition: all .3s ease-in-out;
+
+// Boxes
+$box-bg: darken($white, 5%);
+$box-color: invert($box-bg);
+$box-box-shadow: 0 3px 6px rgba($black, .16), 0 3px 6px rgba($black, .23);
+$box-margin: $spacer;
+$box-margin--lg: $spacer 0;
+$box-padding: $spacer * .5;
+$box-title-font-size: $base-font-size * 2;
+$box-title-letter-spacing: 1px;
+$box-content-width: calc(100% - #{$spacer*.4});
+$box-content-margin: $spacer auto;
+$box-content-font-size: $base-font-size * 1.15;
+
+// Buttons
+$btn-default-color: $base-color;
+
+// Links
+$link-color: $primary;
+$link-color-hover: darken($primary, 10%);
+$link-text-decoration: none;
+$link-transition: color .3s ease-in-out;
+
+// Icons
+$icon-brand-width: 32px;
+$icon-brand-height: 32px;
+
+// List
+$list-text-align: left;
+$list-style-type: square;
+$list-element-margin: ($spacer*.5) 0 0 $spacer;
+$list-element-margin: ($spacer*.5) 0 0 ($spacer*2);
+
+// Scrollbar
+$scrollbar-width: 6px;
+$scrollbar-thumb-box-shadow: inset 0 0 6px rgba($black, .3);
+$scrollbar-thumb-bg: $primary;
+$scrollbar-track-bg: $black;
+
+// Breakpoints
+$bp-lg: 1200px;
+$bp-md: 992px;
+$bp-sm: 768px;
+$bp-xsm: 480px;
+
+// SMILE! =)
+$smile: "=)";
+$smile-transform: rotate(45deg);
+
+// Page: Projects
+$project-box-content-width: $box-content-width;
+$project-item-margin: $spacer;
+$project-link-transition: all 2s ease-in-out;
+$project-link-after-bg: rgba($primary, .5);
+$project-link-after-transition: all .3s ease-in-out;
+$project-link-after-transform: scale(0);
+$project-link-hover-after-transform: scale(1);
+$project-link-hover-preview: projectPreview 1s ease-in-out;
+$project-preview-padding: $spacer;
+$project-preview-color: $base-color;
+$project-preview-border: 3px solid $project-preview-color;
+$project-preview-font-size: $base-font-size * 1.8;
+$project-preview-transition: .3 ease-in-out;
+$project-preview-transform: translateY(-50%) rotateX(0deg);
+$project-preview-animation-transform-33: translateY(-50%) skew(65deg) rotateX(90deg);
+$project-preview-animation-transform-50: translateY(-50%) skew(0) rotateX(0);

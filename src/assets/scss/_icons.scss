@@ -1,0 +1,25 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background: url('../assets/img/sprite.svg');
+}
+.icon-brand4 {
+  width: $icon-brand-width;
+  height: $icon-brand-height;
+  background-position: 0 0;
+}
+.icon-brand2 {
+  width: $icon-brand-width;
+  height: $icon-brand-height;
+  background-position: -36px 0;
+}
+.icon-brand1 {
+  width: $icon-brand-width;
+  height: $icon-brand-height;
+  background-position: -72px 0;
+}
+.icon-brand3 {
+  width: $icon-brand-width;
+  height: $icon-brand-height;
+  background-position: -108px 0;
+}
