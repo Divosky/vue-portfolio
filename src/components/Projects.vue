@@ -3,14 +3,14 @@
     <section class="box box--lg">
       <fieldset class="fieldset">
         <legend class="fieldset-title">
-          <h3 class="box-title"><span>Projekty</span></h3>
+          <h3 class="box-title"><span>{{ $t("projects.title") }}</span></h3>
         </legend>
         <div class="fieldset-content">
           <article class="box-content">
             <div class="project-item" v-for="project in projects" :key="project.fullSize">
               <a class="project-link" :href="project.fullSize">
                 <img class="project-image" :src="project.thumbnail">
-                <span class="project-preview">Preview</span>
+                <span class="project-preview">{{ $t("projects.preview") }}</span>
               </a>
             </div>
           </article>

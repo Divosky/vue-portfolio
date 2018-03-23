@@ -10,13 +10,13 @@
       <nav class="nav-main">
         <ul>
           <li>
-              <router-link to="/">Homepage</router-link>
+              <router-link to="/">{{ $t("nav.homepage") }}</router-link>
           </li>
           <li>
-              <router-link to="/Projects">Projects</router-link>
+              <router-link to="/Projects">{{ $t("nav.projects") }}</router-link>
           </li>
           <li>
-              <router-link to="/Contact">Contact</router-link>
+              <router-link to="/Contact">{{ $t("nav.contact") }}</router-link>
           </li>
         </ul>
       </nav>

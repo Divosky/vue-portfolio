@@ -2,22 +2,20 @@
   <main class="site-content">
     <section class="box box--lg">
       <h3 class="box-title">
-        Hello
+        {{ $t("helloworld.title") }}
         <span class="smile"></span>
       </h3>
       <article class="box-content">
         <p>
-          If you are looking for someone, who can code you a website - you have hit the perfect spot. Go to the "Contact" page as soon
-          as possible and get in touch with me. I offer code of first-class quality, accordance with the latest standards.
-          What does it mean? That you pay and have exactly what you need! You don't need to worry about anything. What I can do for you:
+          {{ $t("helloworld.article[0]") }}
         </p>
         <ul class="list">
-          <li>Scripts and CMS installation and configuration</li>
-          <li>Editing and making awesome themes and websites (Responsivity? Mobile-first? Sure!)</li>
-          <li>Various generators (e.g. graphic generator)</li>
-          <li>Inormation (e.g. top lists) about your TeamSpeak, SA:MP, CS server on your website!</li>
+          <li>{{ $t("helloworld.article[1]") }}</li>
+          <li>{{ $t("helloworld.article[2]") }}</li>
+          <li>{{ $t("helloworld.article[3]") }}</li>
+          <li>{{ $t("helloworld.article[4]") }}</li>
         </ul>
-        <p>Contact me ASAP! </p>
+        <p>{{ $t("helloworld.article[5]") }}</p>
       </article>
     </section>
   </main>
