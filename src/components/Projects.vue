@@ -48,6 +48,14 @@ export default {
         {
           thumbnail: './static/img/projects/small-6.png',
           fullSize: 'static/img/projects/6.png'
+        },
+        {
+          thumbnail: './static/img/projects/small-7.png',
+          fullSize: 'static/img/projects/7.png'
+        },
+        {
+          thumbnail: './static/img/projects/small-8.png',
+          fullSize: 'static/img/projects/8.png'
         }
       ]
     }
