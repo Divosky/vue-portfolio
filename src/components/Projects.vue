@@ -124,6 +124,8 @@ export default {
 
 .fieldset {
   &-title {
+    display: block;
+    width: 100%; // There seems to be a bug in firefox (at least in version 60 on linux), width depends on element's chrildren 
     text-align: center;
   }
   &-content {
