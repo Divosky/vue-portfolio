@@ -9,7 +9,7 @@ Vue.use(VueI18n);
 Vue.config.productionTip = false
 
 const messages = {
-  "en-US": {
+  en: {
     helloworld: {
       title: 'Hello',
       article: [
@@ -31,7 +31,7 @@ const messages = {
       contact: 'Contact'
     }
   },
-  "pl-PL": {
+  pl: {
     helloworld: {
       title: 'No witam',
       article: [
